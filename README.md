@@ -1,4 +1,4 @@
-# Project_March_sql_m01
+Project_March_sql_m01
 
 Project Title: Retail Sales Analysis
 Level: Beginner
