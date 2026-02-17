@@ -93,9 +93,9 @@ WHERE
 3. **Write a SQL query to calculate the total sales (total_sale) for each category**:
 '''sql
  SELECT
- category,
- SUM(total_sale) as net_sale,
- COUNT(*) as total_orders
+     category,
+     SUM(total_sale) as net_sale,
+     COUNT(*) as total_orders
  FROM retail_sales
  GROUP BY 1
 '''
@@ -127,7 +127,8 @@ GROUP
     gender
 ORDER BY 1
 '''
-7. Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
+
+7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
 '''sql  
 SELECT 
        year,
