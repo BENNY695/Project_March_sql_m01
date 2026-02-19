@@ -21,25 +21,26 @@ Business Analysis: Apply SQL queries to address key business questions and extra
 
 - **Database Creation**: The project begins with the creation of a database called p1_retail_db.
 - **Table Creation**: A table named retail_sales is then created to store the data. Its structure includes fields such as transaction ID, sale date and time, customer ID, gender, age, product category, quantity sold, unit price, cost of goods sold (COGS), and total sales amount.
+sql
 
-"""sql
 CREATE DATABASE march_sql_m1;
 
-CREATE TABLE retail_sales
-(
-    transactions_id INT PRIMARY KEY,
-    sale_date DATE,	
+USE march_sql_m1;
+
+CREATE TABLE retail_sales (
+    transaction_id INT PRIMARY KEY,
+    sale_date DATE,
     sale_time TIME,
-    customer_id INT,	
+    customer_id INT,
     gender VARCHAR(10),
     age INT,
     category VARCHAR(35),
     quantity INT,
-    price_per_unit FLOAT,	
-    cogs FLOAT,
-    total_sale FLOAT
+    price_per_unit DECIMAL(10,2),
+    cogs DECIMAL(10,2),
+    total_sale DECIMAL(10,2)
 );
-""" 
+
 
 ### 2. DATA EXPLORATION & CLEANING 
 
